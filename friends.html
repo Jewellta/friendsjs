@@ -7,23 +7,33 @@
     <div>
         <div id="form">
         <label>Enter Name:</label>
-        <input value="text"></input>
+        <input id ="name" type="text" placeholder="Name"></input>
         <br>
         
         <label>Enter Email</label>
-        <input value="text"></input>
+        <input id="email" type="text" placeholder="Email"></input>
         <br>
         
         <label>Enter Phone</label>
-        <input value="text"></input>
+        <input id="phone" type="text" placeholder="Phone"></input>
         <br>
         </div>
-        
+
         <label>Submit</label>
         <button onclick="submit()" id="submit" >Click me!</button>
-        <button onclick="display()">Display Names</button>
-        <div id="output">Results will display here</div>
+
     </div>
+    <table>
+        <thead> 
+        <tr>
+            <th>Name</th><th>Email</th><th>Phone</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+
     <script src="friendsjs/friends.js"></script>
 </body>
 </html>
